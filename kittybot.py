@@ -4,15 +4,13 @@ import os
 import requests
 from dotenv import load_dotenv
 from telegram import ReplyKeyboardMarkup, Update
-from telegram.ext import (CallbackContext, CommandHandler, Filters,
-                          MessageHandler, Updater)
+from telegram.ext import CallbackContext, CommandHandler, Updater
 
 load_dotenv()
 
-# URL = 'https://api.thecatapi.com/v1/images/search'
-# EXT_URL = 'https://api.thedogapi.com/v1/images/search'
-URL = ''
-EXT_URL = ''
+URL = 'https://api.thecatapi.com/v1/images/search'
+EXT_URL = 'https://api.thedogapi.com/v1/images/search'
+
 STICKER_NOTHING_FOUND_ID = (
     'CAACAgIAAxkBAAEEiFBiYmlwjTAQX0ldw38OgYIL8LSXhgACOg8AAmyl2UkNNPZc7UiNvCQE'
 )
